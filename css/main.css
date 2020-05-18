@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold.ttf");
+}
+
+#background {
+    padding: 50px 0;
+    background: url("../images/human-skeleton.png") no-repeat top center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+#header #logo-container #logo-link {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+#header #logo-container #logo-link:hover {
+    text-decoration: none;
+}
+
+#header #contacts-container {
+    display: flex;
+    align-items: center;
+}
+
+#header #logo-container #logo {
+    width: 70px;
+}
+
+#header #logo-container #name {
+    width: 150px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+    color: #1D4674;
+}
+
+#header i {
+    font-size: 24px;
+    color: #3685E2;
+}
+
+#header a {
+    width: 175px;
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+    color: #1D4674;
+    margin-left: 10px;
+}
+
+.contact:hover {
+    text-decoration: none;
+}
+
+#request-lk:not([href]):hover {
+    color: #3685E2 !important;
+    text-decoration: underline;
+}
+
+#header button {
+    height: 38px;
+    width: 170px !important;
+    margin: auto 0 !important;
+}
+
+#ref-info {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#ref-info-container {
+    width: 600px;
+}
+
+#ref-info-container #strip {
+    height: 80px;
+    width: 10px;
+    background-color: #3685E2;
+    border-radius: 20px;
+    margin: auto 0;
+}
+
+#ref-info-description-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+#ref-info-description {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 40px;
+    width: 500px;
+    line-height: 1.8;
+}
+
+#title {
+    color: #3685E2;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#experts-description {
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#director-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#director-image {
+    width: 125px;
+    border-radius: 90px;
+}
+
+#director-info {
+    margin-left: 20px;
+}
+
+#director-name {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+#director-text {
+    font-size: 14px;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#experts {
+    display: flex;
+    margin-top: 10px;
+}
+
+.expert {
+    margin-right: 15px;
+    text-align: center;
+}
+
+.expert-image {
+    width: 100px;
+    border-radius: 90px;
+    margin-bottom: 5px;
+}
+
+.expert-text {
+    font-size: 14px;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#list-container {
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+}
+
+.list-group {
+    font-size: 18px;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-pane span, a {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+#list-profile span, #list-profile a, #list-profile #registration, #list-profile #forget-password {
+    display: none;
+}
+
+#list-documents span, #list-documents a, #list-documents img {
+    display: none;
+}
+
+#list-contacts span, #list-contacts a {
+    display: none;
+}
+
+.tab-pane a {
+    font-family: "RobotoBold", sans-serif;
+    color: #3685E2;
+}
+
+.list-group-item {
+    background-color: inherit;
+}
+
+.list-group-item:hover {
+    background-color: inherit;
+}
+
+.list-group-item.active {
+    background-color: #1D4674;
+    border-color: #1D4674;
+    border-radius: 20px;
+    font-family: "RobotoBold", sans-serif;
+    margin-top: 0 !important;
+}
+
+.list-group-item-action {
+    color: #1D4674;
+    border: none;
+    font-family: "RobotoBold", sans-serif;
+}
+
+.list-group-item-action:hover {
+    color: #3685E2;
+}
+
+.list-group-item.active:hover {
+    color: white;
+}
+
+#request-header, #profile-header, #registration-header, #forget-password-header, .bold {
+    font-family: "RobotoBold", sans-serif !important;
+}
+
+#request-header {
+    font-size: 18px;
+}
+
+#list-profile {
+    display: flex;
+    justify-content: center;
+}
+
+#list-profile #authorization {
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 500px;
+    height: 330px;
+    border: 3px solid #1D4674;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+
+#list-profile #registration {
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 500px;
+    height: 350px;
+    border: 3px solid #1D4674;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+
+#list-profile #forget-password {
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 500px;
+    height: 240px;
+    border: 3px solid #1D4674;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+
+#list-profile form span {
+    font-size: 18px;
+}
+
+#list-profile form input {
+    border-radius: 20px;
+    width: 200px;
+    background-color: rgba(54, 133, 226, 0.1);
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+}
+
+#list-profile form #input-email, #list-profile form #registration-email, #list-profile form #input-forget-password {
+    margin-top: 30px;
+}
+
+#list-profile form button, #header button {
+    border-radius: 20px;
+    width: 200px;
+    background-color: #3685E2;
+    border-color: #3685E2;
+    font-family: "RobotoBold", sans-serif;
+    margin: 20px auto 10px auto;
+}
+
+#registration-link, #forget-password-link {
+    font-size: 14px;
+    color: #a5b0b9;
+    font-family: "Roboto", sans-serif;
+    display: inline !important;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+    outline: 0;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+    border-color: #3685E2;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+    border-color: #3685E2;
+}
+
+.btn-primary:hover {
+    border-color: #3685E2;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+#list-profile form .col-sm-10 {
+    flex: none;
+    max-width: none;
+}
+
+#list-documents {
+    font-size: 18px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #1D4674;
+}
+
+#list-contacts {
+    display: none;
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #1D4674;
+}
+
+#list-documents, #list-contacts {
+    text-align: center;
+}
+
+.document-image {
+    width: 40px;
+    margin: 15px auto 5px auto;
+}
+
+.document-image:first-child {
+    margin: 0 auto 5px auto;
+}
+
+.list-profile-list {
+    cursor: pointer;
+}
+
+#list-request {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #1D4674;
+}
+
+#list-request span:nth-child(6), #list-request span:nth-child(7) {
+    margin-top: 20px;
+}
+
+#map {
+    width: 584px;
+    height: 448px;
+    margin: 20px auto 0 auto;
+    display: none;
+}

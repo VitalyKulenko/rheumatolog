@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold.ttf");
+}
+
+#background {
+    padding: 50px 0;
+    background: url("../images/human-skeleton.png") no-repeat top center;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+#header #logo-container #logo-link {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+#header #logo-container #logo-link:hover {
+    text-decoration: none;
+}
+
+#header #settings-container {
+    display: flex;
+    align-items: center;
+}
+
+#header #logo-container #logo {
+    width: 70px;
+}
+
+#header #logo-container #name {
+    width: 150px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+    color: #1D4674;
+}
+
+#header i {
+    font-size: 24px;
+    color: #3685E2;
+}
+
+#header a {
+    width: 175px;
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+    color: #1D4674;
+    margin-left: 10px;
+}
+
+#header button {
+    height: 38px;
+    width: 170px !important;
+    margin: auto 0 !important;
+}
+
+#header #contacts-container {
+    display: flex;
+    align-items: center;
+}
+
+#header #user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#header #user i {
+    font-size: 40px;
+    margin-left: 10px;
+    color: #1D4674;
+}
+
+#list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-group {
+    font-size: 18px;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-pane span, a {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+#list-consultations #new-consultation {
+    width: 100%;
+    height: 51px;
+    background-color: #1D4674;
+    border-color: #1D4674;
+    border-radius: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: white;
+}
+
+.consultation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid #1D4674;
+    border-radius: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: #1D4674;
+    margin: 10px 0;
+}
+
+.consultation i {
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+#show {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    width: 250px;
+}
+
+#show i {
+    margin: 0 10px 0 50px;
+}
+
+#show-categories {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#list-container2 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#col-3-2 {
+    flex: none;
+    max-width: none;
+}
+
+#list-tab2 {
+    flex-direction: row;
+}
+
+#col-9-2 {
+    margin-top: 10px;
+    flex: 100%;
+    max-width: 100%;
+}
+
+#list-answered-list, #list-seen-list, #list-draft-list {
+    font-size: 14px;
+    text-align: center;
+    width: 170px;
+    padding: 5px 20px;
+}
+
+#list-settings span, #list-settings a {
+    display: none;
+}
+
+.list-group-item:hover {
+    background-color: inherit;
+}
+
+.list-group-item.active {
+    background-color: #1D4674;
+    border-color: #1D4674;
+    border-radius: 20px;
+    font-family: "RobotoBold", sans-serif;
+    margin-top: 0 !important;
+}
+
+.list-group-item {
+    background-color: inherit;
+}
+
+.list-group-item-action {
+    color: #1D4674;
+    border: none;
+    font-family: "RobotoBold", sans-serif;
+}
+
+.list-group-item-action:hover {
+    color: #3685E2;
+}
+
+.list-group-item.active:hover {
+    color: white;
+}
+
+.bold {
+    font-family: "RobotoBold", sans-serif !important;
+}
+
+#list-program {
+    display: none;
+    justify-content: center;
+}
+
+#list-study {
+    display: none;
+    font-size: 18px;
+    justify-content: center;
+}
+
+#list-settings {
+    display: none;
+    text-align: center;
+}
+
+.list-program-list {
+    cursor: pointer;
+}

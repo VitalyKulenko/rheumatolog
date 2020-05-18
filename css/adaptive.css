@@ -1,0 +1,458 @@
+@media screen and (min-width: 1300px) {
+    #ref-info, #list-container {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    #ref-info, #list-container {
+        width: 1100px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    #ref-info-container {
+        width: 520px;
+    }
+
+    #ref-info-description {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #ref-info, #list-container {
+        width: 950px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #ref-info-container {
+        width: 375px;
+        margin-right: 20px;
+    }
+
+    #ref-info-container #strip {
+        height: 130px;
+    }
+
+    .expert {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #ref-info, #list-container {
+        width: 800px;
+    }
+
+    #ref-info {
+        flex-wrap: wrap;
+    }
+
+    #ref-info-container {
+        width: 800px;
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #ref-info-container #strip {
+        height: 80px;
+    }
+
+    #ref-info-description {
+        font-size: 18px;
+        margin-left: 40px;
+    }
+
+    #ref-info-description-container {
+        margin: 50px auto 0 auto;
+        width: 550px;
+    }
+
+    #experts-container {
+        margin: 50px auto 0 auto;
+        text-align: center;
+    }
+
+    #director-container {
+        width: 300px;
+        margin: 20px auto 0 auto;
+    }
+
+    .expert {
+        margin-right: 15px;
+    }
+
+    .list-group {
+        font-size: 16px;
+    }
+
+    #map {
+        width: 500px;
+    }
+
+    #background {
+        background-size: auto 1300px;
+    }
+
+    #list-contacts {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    #header a {
+        width: 155px;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    #header {
+        flex-wrap: wrap;
+    }
+
+    #header #logo-container #name, #header a {
+        font-size: 14px;
+        width: 135px;
+    }
+
+    #header button {
+        width: 130px !important;
+        font-size: 14px;
+    }
+
+    #ref-info, #list-container {
+        width: 700px;
+    }
+
+    #ref-info-container {
+        width: 700px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-3 {
+        flex: none;
+        max-width: none;
+    }
+
+    .list-group {
+        flex-direction: row;
+    }
+
+    .list-group-item {
+        text-align: center;
+    }
+
+    .col-9 {
+        margin-top: 20px;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .tab-pane {
+        text-align: center;
+    }
+
+    #list-request span {
+        margin-top: 10px;
+    }
+
+    #list-documents {
+        font-size: 16px;
+    }
+
+    #map {
+        width: 400px;
+        height: 400px;
+    }
+
+    #background {
+        background-size: auto 1320px;
+    }
+
+    #list-contacts {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #header {
+        justify-content: center;
+    }
+
+    #header a {
+        width: 150px;
+    }
+
+    #header button {
+        margin-left: 15px !important;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #ref-info, #list-container {
+        width: 600px;
+    }
+
+    #ref-info-container {
+        width: 600px;
+    }
+
+    .list-group-item {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    #list-profile #authorization, #list-profile #registration, #list-profile #forget-password {
+        width: 400px;
+    }
+
+    #background {
+        background: url("../images/human-skeleton-adaptive.png") no-repeat top center;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    #logo-container {
+        width: 220px;
+        justify-content: left;
+        margin: 0 10px;
+    }
+
+    #header #contacts-container {
+        flex-wrap: wrap;
+        width: 340px;
+        order: 2;
+    }
+
+    #header #logo-link {
+        margin: 0 0 10px 0;
+    }
+
+    #header #contacts-container i {
+        margin-bottom: 15px;
+    }
+
+    #header a {
+        width: 135px;
+        margin-bottom: 15px;
+    }
+
+    #header button {
+        order: 1;
+        margin: auto 10px !important;
+    }
+
+    #ref-info-description-container {
+        width: 400px;
+    }
+
+    #ref-info-container #strip {
+        height: 180px;
+    }
+
+    #ref-info-description {
+        width: 370px;
+    }
+
+    #ref-info, #list-container {
+        width: 400px;
+    }
+
+    #ref-info-container {
+        width: 400px;
+    }
+
+    #experts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .expert-text {
+        margin-bottom: 5px;
+    }
+
+    .list-group-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #list-profile #authorization, #list-profile #registration, #list-profile #forget-password {
+        width: 350px;
+    }
+
+    #list-contacts {
+        font-size: 14px;
+    }
+
+    #map {
+        width: 320px;
+        height: 320px;
+    }
+
+    #background {
+        background-size: auto 1800px;
+    }
+
+    #list-contacts {
+        width: 400px;
+    }
+
+    #list-documents {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #header #logo-container {
+        margin: 0;
+    }
+
+    #header #contacts-container {
+        order: 1;
+        width: 170px;
+        margin: 0 95px;
+        text-align: center;
+    }
+
+    #header button {
+        order: 2;
+        margin: 0 0 10px 0 !important;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #ref-info, #list-container, #ref-info-container, #ref-info-description-container {
+        width: 300px;
+    }
+
+    #ref-info-description {
+        width: 290px;
+        margin-left: 30px;
+    }
+
+    #ref-info-container #strip {
+        height: 210px;
+    }
+
+    .list-group {
+        flex-wrap: wrap;
+    }
+
+    .list-group-item {
+        width: 145px;
+    }
+
+    #list-profile #authorization, #list-profile #registration, #list-profile #forget-password {
+        width: 280px;
+    }
+
+    #list-profile form span {
+        font-size: 16px;
+    }
+
+    #registration-link, #forget-password-link {
+        margin: 0 5px;
+    }
+
+    #list-documents {
+        font-size: 14px;
+    }
+
+    #map {
+        width: 280px;
+        height: 280px;
+    }
+
+    #list-contacts {
+        width: 300px;
+    }
+
+    #list-documents {
+        width: 280px;
+    }
+
+    #background {
+        background-size: auto 2300px;
+        background: url("../images/human-skeleton-adaptive2.png") no-repeat top center;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    #header #contacts-container {
+        margin: 0 75px;
+    }
+
+    #ref-info, #list-container, #ref-info-container, #ref-info-description-container, #director-container {
+        width: 280px;
+    }
+
+    #ref-info-container #strip {
+        height: 160px;
+    }
+
+    #ref-info-description {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+
+    #director-image {
+        width: 120px;
+    }
+
+    #director-name {
+        font-size: 15px;
+    }
+
+    .list-group-item {
+        width: 135px;
+        font-size: 14px;
+    }
+
+    #list-request {
+        font-size: 14px;
+    }
+
+    #list-profile #authorization, #list-profile #registration, #list-profile #forget-password {
+        width: 260px;
+        padding: 30px 20px;
+    }
+
+    #list-profile form span {
+        font-size: 15px;
+    }
+
+    #list-contacts {
+        width: 280px;
+    }
+
+    #map {
+        width: 260px;
+        height: 260px;
+    }
+}
