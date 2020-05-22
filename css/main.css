@@ -11,6 +11,7 @@
 #background {
     padding: 50px 0;
     background: url("../images/human-skeleton.png") no-repeat top center;
+    min-height: 1024px;
 }
 
 h1 {

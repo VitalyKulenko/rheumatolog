@@ -13,6 +13,7 @@ $(document).ready(() => {
         $('#list-answered-list').addClass('active');
         $('#list-answered .consultation').css('display', 'flex');
         $('#list-find').css('display', 'none');
+        $('#list-settings').css('display', 'none');
     });
 
     $('#list-program-list').click(() => {
@@ -25,6 +26,7 @@ $(document).ready(() => {
         $('#list-container2').css('display', 'none');
         $('#list-study').css('display', 'none');
         $('#list-find').css('display', 'none');
+        $('#list-settings').css('display', 'none');
     });
 
     $('#list-study-list').click(() => {
@@ -36,6 +38,7 @@ $(document).ready(() => {
         $('#list-study').addClass('show active').css('display', 'block');
         $('#list-container2').css('display', 'none');
         $('#list-find').css('display', 'none');
+        $('#list-settings').css('display', 'none');
     });
 
     $('#list-settings-list').click(() => {
@@ -47,8 +50,8 @@ $(document).ready(() => {
         $('#list-settings-list').addClass('active');
         $('#list-settings').addClass('show active').css('display', 'flex');
         $('#list-settings div').css('display', 'flex');
-        $('#list-settings span').css('display', 'block');
-        $('#list-settings a').css('display', 'block');
+        $('#settings').css('display', 'flex');
+        $('#correct').css('display', 'none');
         $('#list-container2').css('display', 'none');
         $('#list-find').css('display', 'none');
     });

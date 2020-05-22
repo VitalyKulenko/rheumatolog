@@ -11,7 +11,7 @@
 #background {
     padding: 50px 0;
     background: url("../images/human-skeleton.png") no-repeat top center;
-    min-height: 550px;
+    min-height: 1024px;
 }
 
 #header {
@@ -278,7 +278,8 @@
     padding: 5px 20px;
 }
 
-#input-find {
+#input-find, #list-settings #settings input {
+    font-size: 16px;
     border-radius: 20px;
     width: 250px;
     background-color: rgba(54, 133, 226, 0.1);
@@ -358,26 +359,120 @@
     font-family: "RobotoBold", sans-serif !important;
 }
 
+#list-program #program-text span, a {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+#list-program #program-text a {
+    font-family: "RobotoBold", sans-serif;
+    color: #3685E2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "RobotoBold", sans-serif;
+    margin-top: 10px;
+}
+
 #list-program {
     display: none;
     justify-content: center;
+}
+
+#list-program #program-text {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #1D4674;
 }
 
 #list-study {
     display: none;
     font-size: 18px;
     justify-content: center;
+    text-align: center;
+}
+
+#list-study iframe {
+    box-shadow: 3px 3px 10px 4px #00000061;
 }
 
 #list-settings {
     display: none;
     text-align: center;
+    justify-content: center;
 }
 
-#list-settings div{
+#list-settings div {
     width: 100%;
 }
 
 .list-program-list {
     cursor: pointer;
+}
+
+#list-settings #settings {
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 600px;
+    height: 500px;
+    border: 3px solid #1D4674;
+    border-radius: 20px;
+    padding: 30px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#list-settings #settings div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#list-settings #settings div div {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+#list-settings #settings #account-verify #verify #correct {
+    width: auto;
+}
+
+#list-settings #settings #account-verify #verify #uncorrect {
+    width: auto;
+}
+
+#list-settings #settings #account-verify #verify #correct i {
+    color: green;
+    margin-right: 10px;
+}
+
+#list-settings #settings #account-verify #verify #uncorrect i {
+    color: red;
+    margin-right: 10px;
+}
+
+#list-settings #verify {
+    font-family: "Roboto", sans-serif;
+    justify-content: center !important;
+    margin: 12px 0;
+    width: 250px;
+}
+
+#list-settings input {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+}
+
+#settings button {
+    border-radius: 20px;
+    width: 200px;
+    background-color: #3685E2;
+    border-color: #3685E2;
+    font-family: "RobotoBold", sans-serif;
+    margin-top: 20px;
 }

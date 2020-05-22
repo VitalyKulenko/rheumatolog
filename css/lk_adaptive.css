@@ -1,0 +1,435 @@
+@media screen and (min-width: 1301px) {
+    #ref-info, #list-container {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #list-container {
+        width: 1100px;
+    }
+
+    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
+        display: flex;
+        font-size: 14px;
+        width: 160px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #show i {
+        margin: 0 10px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #background {
+        background-size: auto 1320px;
+    }
+
+    #list-container {
+        width: 950px;
+    }
+
+    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
+        font-size: 14px;
+        width: 130px;
+    }
+
+    #list-program #program-text {
+        text-align: center;
+    }
+
+    #list-study iframe {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #background {
+        min-height: 1366px;
+        background: url("../images/human-skeleton-adaptive-ipad.png") no-repeat top center;
+    }
+
+    #list-container {
+        width: 800px;
+    }
+
+    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
+        font-size: 14px;
+        width: 110px;
+    }
+
+    #show i {
+        margin: 0 10px 0 0;
+    }
+
+    #list-study iframe {
+        width: 600px;
+        height: 335px;
+    }
+
+    .list-group {
+        font-size: 15px;
+    }
+
+    #background {
+        background-size: auto 1366px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #header a {
+        width: 155px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #header {
+        flex-wrap: wrap;
+    }
+
+    #header #logo-container #name, #header a, #header #user {
+        font-size: 14px;
+        width: 135px;
+    }
+
+    #background {
+        min-height: 1000px;
+    }
+
+    #list-container {
+        width: 700px;
+    }
+
+    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
+        font-size: 14px;
+        width: 130px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-3 {
+        flex: none;
+        max-width: none;
+    }
+
+    .list-group {
+        flex-direction: row;
+    }
+
+    .list-group-item {
+        text-align: center;
+    }
+
+    .col-9 {
+        margin-top: 20px;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #background {
+        background-size: auto 1320px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        justify-content: center;
+    }
+
+    #header a {
+        width: 150px;
+    }
+
+    #logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #list-container {
+        width: 600px;
+    }
+
+    .list-group-item {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
+        font-size: 14px;
+        width: 110px;
+    }
+
+    #background {
+        background: url("../images/human-skeleton-adaptive.png") no-repeat top center;
+    }
+
+    #user #user-name {
+        order: 2;
+    }
+
+    #user i {
+        margin-left: 0 !important;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #logo-container {
+        width: 220px;
+        justify-content: left;
+        margin: 0 10px;
+    }
+
+    #header #contacts-container {
+        flex-wrap: wrap;
+        width: 340px;
+        order: 2;
+    }
+
+    #header #logo-link {
+        margin: 0 0 10px 0;
+    }
+
+    #header #contacts-container i {
+        margin-bottom: 15px;
+    }
+
+    #header a {
+        width: 135px;
+        margin-bottom: 15px;
+    }
+
+    #list-container {
+        width: 400px;
+    }
+
+    #ref-info-container {
+        width: 400px;
+    }
+
+    .list-group-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .consultation .consultation-button {
+        width: 135px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    #list-tab2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #show {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    #list-tab {
+        flex-wrap: wrap;
+    }
+
+    .list-group-item-action {
+        width: 200px !important;
+    }
+
+    #program-text h4 {
+        font-size: 16px;
+    }
+
+    #program-text span {
+        font-size: 14px;
+    }
+
+    #list-study iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    #list-settings #settings {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    #list-settings #settings input {
+        font-size: 14px;
+        width: 180px;
+    }
+
+    #list-settings #settings div div {
+        width: 140px;
+    }
+
+    #list-settings #verify {
+        width: 180px !important;
+    }
+
+    .consultation {
+        padding: 0 15px;
+    }
+
+    .consultation-info-container {
+        margin-left: 15px;
+    }
+
+    .consultation-info .consultation-number {
+        font-size: 15px;
+    }
+
+    .consultation-info .consultation-status {
+        font-size: 13px;
+    }
+
+    #input-find {
+        font-size: 14px;
+        width: 220px;
+    }
+
+    #background {
+        background-size: auto 1800px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header #logo-container {
+        margin: 0;
+    }
+
+    #header #contacts-container {
+        order: 1;
+        width: 170px;
+        margin: 0 95px;
+        text-align: center;
+    }
+
+    #header button {
+        order: 2;
+        margin: 0 0 10px 0 !important;
+    }
+
+    #header #user {
+        order: 2;
+    }
+
+    #header #user i {
+        font-size: 30px;
+    }
+
+    #list-container {
+        width: 300px;
+    }
+
+    .list-group-item-action {
+        width: 150px !important;
+    }
+
+    #list-tab2 {
+        width: 300px;
+    }
+
+    #show-categories {
+        flex-wrap: wrap;
+    }
+
+    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list, .consultation .btn {
+        font-size: 13px;
+    }
+
+    .fa-clipboard-list {
+        display: none;
+    }
+
+    .consultation-info-container {
+        margin-left: 0;
+    }
+
+    .consultation .consultation-button {
+        width: 100px;
+    }
+
+    .consultation-info .consultation-number {
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .consultation-button a {
+        text-align: center;
+    }
+
+    #list-find {
+        margin-top: 15px;
+    }
+
+    #list-study iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    #list-settings #settings {
+        height: 700px;
+    }
+
+    #list-settings #settings {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    #list-settings #settings div {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #list-settings #verify {
+        margin: 0;
+    }
+
+    .list-group {
+        flex-wrap: wrap;
+    }
+
+    .list-group-item {
+        width: 145px;
+    }
+
+    #list-profile form span {
+        font-size: 16px;
+    }
+
+    #background {
+        background-size: auto 2300px;
+        background: url("../images/human-skeleton-adaptive2.png") no-repeat top center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #header #contacts-container {
+        margin: 0 75px;
+    }
+
+    #list-container, #list-tab2 {
+        width: 280px;
+    }
+
+    .list-group-item-action {
+        width: 140px !important;
+    }
+
+    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list, .consultation .btn {
+        font-size: 12px;
+    }
+}

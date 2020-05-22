@@ -1,10 +1,10 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1301px) {
     #ref-info, #list-container {
         width: 1200px;
     }
 }
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1300px) {
     #ref-info, #list-container {
         width: 1100px;
     }
@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
     #ref-info, #list-container {
         width: 950px;
     }
@@ -46,7 +46,12 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
+    #background {
+        min-height: 1266px;
+        background: url("../images/human-skeleton-adaptive-ipad.png") no-repeat top center;
+    }
+
     #ref-info, #list-container {
         width: 800px;
     }
@@ -102,7 +107,7 @@
     }
 
     #background {
-        background-size: auto 1300px;
+        background-size: auto 1366px;
     }
 
     #list-contacts {
@@ -110,13 +115,13 @@
     }
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 900px) {
     #header a {
         width: 155px;
     }
 }
 
-@media screen and (max-width: 849px) {
+@media screen and (max-width: 850px) {
     #header {
         flex-wrap: wrap;
     }
@@ -189,7 +194,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #header {
         justify-content: center;
     }
@@ -234,7 +239,7 @@
     }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 640px) {
     #logo-container {
         width: 220px;
         justify-content: left;
@@ -326,7 +331,7 @@
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
     #header #logo-container {
         margin: 0;
     }
@@ -403,7 +408,7 @@
     }
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
     #header #contacts-container {
         margin: 0 75px;
     }
