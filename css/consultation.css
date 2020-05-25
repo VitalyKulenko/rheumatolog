@@ -92,12 +92,11 @@
 }
 
 .chat-container {
+    display: flex;
+    flex-direction: column-reverse;
     background-color: rgba(255, 255, 255, 0.5);
-    border-bottom: 3px solid #1D4674;
-    border-top: 3px solid #1D4674;
-    border-left: 3px solid #1D4674;
+    border: 3px solid #1D4674;
     overflow-y: scroll;
-    transform: rotateX(180deg);
     height: 500px;
     padding: 20px;
 }
@@ -193,7 +192,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    transform: rotateX(180deg);
 }
 
 .message-container-2 {
@@ -201,7 +199,6 @@
     flex-wrap: wrap;
     margin: 0 0 0 auto;
     width: 100%;
-    transform: rotateX(180deg);
 }
 
 .message-info-1 {
