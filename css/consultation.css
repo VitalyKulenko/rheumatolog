@@ -1,0 +1,495 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold.ttf");
+}
+
+#myTabContent {
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#request {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto 20px auto;
+    font-size: 20px;
+    align-items: center;
+}
+
+#request-number {
+    font-family: "RobotoBold", sans-serif;
+}
+
+#request-date {
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+}
+
+#request button {
+    font-size: 16px;
+    margin-left: 15px;
+    border-radius: 20px;
+    width: 200px;
+    background-color: #1D4674;
+    border-color: #1D4674;
+    font-family: "RobotoBold", sans-serif;
+}
+
+.card-header {
+    height: 50px;
+    background-color: #1D4674;
+}
+
+.card-header .btn {
+    padding: 0;
+    color: white;
+    font-family: "RobotoBold", sans-serif;
+    text-decoration: none;
+}
+
+.card-header .btn:hover {
+    text-decoration: none;
+}
+
+.card-body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.title {
+    font-family: "RobotoBold", sans-serif;
+}
+
+#accordion {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#accordion a {
+    font-family: "RobotoBold", sans-serif;
+    color: #3685E2;
+    margin-left: 20px;
+}
+
+#chat, #dialogue {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.chat-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid #1D4674;
+    border-top: 3px solid #1D4674;
+    border-left: 3px solid #1D4674;
+    overflow-y: scroll;
+    transform: rotateX(180deg);
+    height: 500px;
+    padding: 20px;
+}
+
+#send-form-dialogue, #send-form-chat {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid #1D4674;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#send-form-chat {
+    flex-wrap: wrap;
+}
+
+#send-form-chat-message, #send-form-chat-checkboxes {
+    flex-wrap: nowrap !important;
+}
+
+#send-form-chat-checkboxes label {
+    font-family: "Roboto", sans-serif;
+    width: auto;
+    margin: 5px 0 0 10px;
+}
+
+#send-form-chat-checkboxes label input {
+    width: auto;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #1D4674;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #152c4d;
+}
+
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #1D4674;
+    font-family: "RobotoBold", sans-serif;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: #1D4674;
+    color: white;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#chat input, #dialogue input {
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 1000px;
+    background-color: rgba(190, 190, 190, 0.2);
+    font-family: "Roboto", sans-serif;
+}
+
+#chat button, #dialogue button {
+    font-size: 16px;
+    margin-left: 15px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: #1D4674;
+    border-color: #1D4674;
+    font-family: "RobotoBold", sans-serif;
+}
+
+.message-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transform: rotateX(180deg);
+}
+
+.message-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 auto;
+    width: 100%;
+    transform: rotateX(180deg);
+}
+
+.message-info-1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.message-info-2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.message-info-1 i, .message-info-2 i {
+    font-size: 5px;
+}
+
+.author {
+    margin-right: 5px;
+}
+
+.time {
+    margin-left: 5px;
+}
+
+.like {
+    margin-right: 5px;
+    font-size: 20px !important;
+}
+
+.like-check {
+    display: none;
+    margin-right: 5px;
+    font-size: 20px !important;
+    color: red;
+}
+
+.likes-counter {
+    margin-right: 10px;
+    font-size: 16px !important;
+}
+
+.message-container-1 .message-1 {
+    font-family: "Roboto", sans-serif;
+    background-color: #3685E2;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0 0 0;
+    max-width: 500px;
+}
+
+.message-container-2 .message-2 {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(29, 70, 116);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0 0 auto;
+    max-width: 500px;
+}
+
+.history-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.history-time {
+    border-radius: 10px;
+    background-color: #3685E2;
+    color: white;
+    max-width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+.history-action {
+    margin-left: 10px;
+}
+
+.history-person {
+    font-family: "RobotoBold", sans-serif;
+}
+
+.history-result {
+    font-size: 14px;
+}
+
+#background {
+    padding: 20px 0 50px 0;
+    background: url("../images/human-skeleton.png") no-repeat top center;
+    min-height: 1024px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+#header #logo-container #logo-link {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+#header #logo-container #logo-link:hover {
+    text-decoration: none;
+}
+
+#header #settings-container {
+    display: flex;
+    align-items: center;
+}
+
+#header #logo-container #logo {
+    width: 70px;
+}
+
+#header #logo-container #name {
+    width: 150px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+    color: #1D4674;
+}
+
+#header i {
+    font-size: 24px;
+    color: #3685E2;
+}
+
+#header a {
+    width: 175px;
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+    color: #1D4674;
+    margin-left: 10px;
+}
+
+#header a:hover {
+    text-decoration: none;
+}
+
+#header #contacts-container {
+    display: flex;
+    align-items: center;
+}
+
+#header #user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#header #user i {
+    font-size: 40px;
+    margin-left: 10px;
+    color: #1D4674;
+}
+
+#main-info {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    font-family: "RobotoBold", sans-serif;
+}
+
+#hospital, #status {
+    width: 600px;
+}
+
+#LPU-name, #status-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+#status-info {
+    font-size: 36px;
+    color: #1D4674;
+}
+
+#date, #doctor-name, #medication, #days {
+    font-size: 16px;
+}
+
+.main-header {
+    color: white;
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    font-size: 24px;
+}
+
+.main-description {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#collapseFive .card-body {
+    overflow: scroll;
+}
+
+#collapseFive table {
+    font-size: 14px;
+    border-collapse:collapse;
+    border-spacing: 0;
+    width: 1500px;
+    margin-bottom: 10px;
+}
+
+#collapseFive table, td, th {
+    border: 1px solid #595959;
+}
+
+#collapseFive td, th {
+    padding: 3px;
+    height: 35px;
+}
+
+#collapseFive th {
+    background-color: #7accee;
+}
+
+#collapseFive .table-header {
+    font-family: "RobotoBold", sans-serif;
+    text-align: center;
+}
+
+#collapseFive .table-row {
+    font-family: "Roboto", sans-serif;
+}
+
+#collapseFive .column-center {
+    text-align: center;
+}
+
+#collapseFive a:hover {
+    text-decoration: none;
+}
+
+#collapseFive i {
+    color: green;
+    margin-right: 10px;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+    outline: 0;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+    border-color: #3685E2;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+    border-color: #3685E2;
+}
+
+.btn-primary:hover {
+    border-color: #3685E2;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+}

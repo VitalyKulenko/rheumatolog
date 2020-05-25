@@ -61,6 +61,10 @@
     margin-left: 10px;
 }
 
+#header a:hover {
+    text-decoration: none;
+}
+
 #header #contacts-container {
     display: flex;
     align-items: center;

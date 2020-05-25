@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотр заявки</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/consultation.css">
+    <link rel="stylesheet" href="../css/consultation_adaptive.css">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+</head>
+<body>
+<div id="header">
+    <div id="logo-container"><a id="logo-link" href="index.html"><img id="logo" src="../images/logo.png" alt="">
+        <div id="name">ФГБНУ НИИР<br>им. В. А. Насоновой</div>
+    </a></div>
+    <div id="contacts-container"><i class="fas fa-phone-alt"></i><a class="contact" href="tel:+74951092910">+7 (495) 109
+        29 10</a>
+        <i class="fas fa-envelope"></i><a class="contact" href="mailto:ref-center@irramn.ru">ref-center@irramn.ru</a>
+    </div>
+    <div id="user"><span id="user-name">Пользователь</span><i class="fas fa-user-circle"></i></div>
+</div>
+<div id="background">
+    <div id="request">
+        <div id="request-number">Заявка №6</div>
+        <div id="request-date">от 07 мая 2020 г. 17:20</div>
+        <button id="teleconsultation" class="btn btn-primary">Телеконсультация</button>
+        <button id="reject" class="btn btn-primary">Отклонить заявку</button>
+        <button id="help" class="btn btn-primary">Помощь</button>
+    </div>
+    <div id="main-info">
+        <div id="hospital">
+            <div class="main-header">Направляющее ЛПУ</div>
+            <div id="LPU-name" class="main-description">ЕКАТЕРИНБУРГСКИЙ ЦЕНТР МНТК "МИКРОХИРУРГИЯ ГЛАЗА" Г. СУРГУТ,
+                СУРГУТСКИЙ ФИЛИАЛ ЗАКРЫТОГО АКЦИОНЕРНОГО
+                ОБЩЕСТВА
+            </div>
+            <div class="main-header">Врач</div>
+            <div id="doctor-name" class="main-description">Пупкин Лев Аронович</div>
+            <div class="main-header">Цель консультации</div>
+            <div id="medication" class="main-description">Назначение лечения</div>
+        </div>
+        <div id="status">
+            <div class="main-header">Статус</div>
+            <div id="status-info" class="main-description">В работе</div>
+            <div class="main-header">Срок решения по</div>
+            <div id="date" class="main-description">6 июня 2020</div>
+            <div class="main-header">Осталось дней</div>
+            <div id="days" class="main-description">23</div>
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+               aria-selected="true">Просмотр</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="chat-tab" data-toggle="tab" href="#chat" role="tab" aria-controls="chat"
+               aria-selected="false">Обсуждение</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="dialogue-tab" data-toggle="tab" href="#dialogue" role="tab" aria-controls="dialogue"
+               aria-selected="false">Запросы заявителю</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Карточка заявки
+                        </button>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid.
+                            3 wolf
+                            moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                            eiusmod.
+                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                            assumenda
+                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea
+                            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                            raw
+                            denim
+                            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                            VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Общая информация
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="title">Направительный диагноз:</div>
+                            <div id="diagnosis">спондилоартрит</div>
+                            <div class="title">Текущее состояние:</div>
+                            <div id="condition">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                terry
+                                richardson ad squid
+                            </div>
+                            <div class="title">Анамнез:</div>
+                            <div id="anamnesis">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                terry
+                                richardson ad squid. 3 wolf
+                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                laborum
+                                eiusmod.
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                nesciunt
+                                sapiente
+                                ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table,
+                                raw
+                                denim
+                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Результаты анализов и исследований
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="title">Общий анализ мочи:</div>
+                            <div id="urine">спондилоартрит</div>
+                            <div class="title">Общий анализ крови:</div>
+                            <div id="common-blood">спондилоартрит</div>
+                            <div class="title">Биохимический анализ крови:</div>
+                            <div id="biochemical-blood">спондилоартрит</div>
+                            <div class="title">Уровень СРБ:</div>
+                            <div id="CRP-level">8</div>
+                            <div class="title">Обзорная рентгенография костей таза:</div>
+                            <div id="pelvic-bones">спондилоартрит</div>
+                            <div class="title">Рентгенография костей и дистальных отделов стоп (для больных с поражением
+                                мелких
+                                суставов кистей и стоп):
+                            </div>
+                            <div id="bones-distal-feet">спондилоартрит</div>
+                            <div class="title">Рентгенография поясничного и других отделов позвоночника по показаниям:
+                            </div>
+                            <div id="spine">спондилоартрит</div>
+                            <div class="title">Описание УЗИ суставов, ЭХОКГ, ЭГДС и другие инструментальные методы:
+                            </div>
+                            <div id="instrumental-methods">спондилоартрит</div>
+                            <div class="title">Консультация дерматолога:</div>
+                            <div id="dermatologist">спондилоартрит</div>
+                            <div class="title">Консультация окулиста:</div>
+                            <div id="oculist">спондилоартрит</div>
+                            <div class="title">Консультация фтизиатра:</div>
+                            <div id="TB-specialist">спондилоартрит</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Вложения
+                        </button>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="title">МРТ отделов позвоночника и/или тазобедренных суставов:</div>
+                            <div id="MRI-spine-hip-joints">не предоставлено</div>
+                            <div class="title">МРТ коленных и других суставов:</div>
+                            <div id="MRI-knee-and-other">не предоставлено</div>
+                            <div class="title">МРТ крестцово-подвздошных суставов в аксиальной и сагиттальной проекциях:
+                            </div>
+                            <div id="MRI-sacroiliac-joints">не предоставлено</div>
+                            <div class="title">Дополнительные вложения и информация:</div>
+                            <div id="additional-investments">не предоставлено</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Рабочая группа
+                        </button>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <table>
+                                <tbody>
+                                <tr class="table-header">
+                                    <td rowspan="2">ФИО</td>
+                                    <td rowspan="2">Должность</td>
+                                    <td colspan="4">Тип участия в экспертной группе</td>
+                                    <td rowspan="2">Последняя активность</td>
+                                </tr>
+                                <tr class="table-header">
+                                    <td>Директор</td>
+                                    <td>1-й заместитель директора</td>
+                                    <td>Член экспертной группы</td>
+                                    <td>Заявитель</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="expert-name">Трофимов Иван Дмитриевич</td>
+                                    <td class="expert-position">Ведущий инженер</td>
+                                    <td class="expert-director column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-alternate column-center"></td>
+                                    <td class="expert-member column-center"></td>
+                                    <td class="expert-declarant column-center"></td>
+                                    <td class="expert-last-activity">14 мая 2020 г. 19:57</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="expert-name">Дубинина Татьяна Васильевна</td>
+                                    <td class="expert-position">Заведующий лабораторией</td>
+                                    <td class="expert-director column-center"></td>
+                                    <td class="expert-alternate column-center"></td>
+                                    <td class="expert-member column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-declarant column-center"></td>
+                                    <td class="expert-last-activity">28 ноября 2019 г. 12:28</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="expert-name">Калашников Константин Сергеевич</td>
+                                    <td class="expert-position">Руководитель отдела</td>
+                                    <td class="expert-director column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-alternate column-center"></td>
+                                    <td class="expert-member column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-declarant column-center"></td>
+                                    <td class="expert-last-activity">13 мая 2020 г. 10:14</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="expert-name">Третьякова Вера Викторовна</td>
+                                    <td class="expert-position">Ведущий специалист по информационным технологиям</td>
+                                    <td class="expert-director column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-alternate column-center"></td>
+                                    <td class="expert-member column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-declarant column-center"></td>
+                                    <td class="expert-last-activity">14 мая 2020 г. 12:18</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="expert-name">Бессимо Андрей Андреевич</td>
+                                    <td class="expert-position">Ведущий специалист по информационным технологиям</td>
+                                    <td class="expert-director column-center"></td>
+                                    <td class="expert-alternate column-center"></td>
+                                    <td class="expert-member column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-declarant column-center"></td>
+                                    <td class="expert-last-activity">13 мая 2020 г. 10:50</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="expert-name">Климова Надежда Владимировна</td>
+                                    <td class="expert-position">Специалист по информационным технологиям</td>
+                                    <td class="expert-director column-center"></td>
+                                    <td class="expert-alternate column-center"></td>
+                                    <td class="expert-member column-center"><i class="fas fa-check-circle"></i></td>
+                                    <td class="expert-declarant column-center"></td>
+                                    <td class="expert-last-activity">7 мая 2020 г. 17:20</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a href="#">Изменить состав группы?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            История
+                        </button>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="history-container">
+                                <div class="history-time">
+                                    <div class="history-date">7 мая 2020</div>
+                                    <div class="history-timer">17:00</div>
+                                </div>
+                                <div class="history-action">
+                                    <div class="history-person">Автоматическое действие</div>
+                                    <div class="history-result">Заявка зарегистрирована</div>
+                                </div>
+                            </div>
+                            <div class="history-container">
+                                <div class="history-time">
+                                    <div class="history-date">7 мая 2020</div>
+                                    <div class="history-timer">17:05</div>
+                                </div>
+                                <div class="history-action">
+                                    <div class="history-person">Лила А.М.</div>
+                                    <div class="history-result">Начал формирование рабочей группы экспертов</div>
+                                </div>
+                            </div>
+                            <div class="history-container">
+                                <div class="history-time">
+                                    <div class="history-date">7 мая 2020</div>
+                                    <div class="history-timer">17:06</div>
+                                </div>
+                                <div class="history-action">
+                                    <div class="history-person">Лила А.М.</div>
+                                    <div class="history-result">Сформировал рабочую группу экспертов</div>
+                                </div>
+                            </div>
+                            <div class="history-container">
+                                <div class="history-time">
+                                    <div class="history-date">7 мая 2020</div>
+                                    <div class="history-timer">17:07</div>
+                                </div>
+                                <div class="history-action">
+                                    <div class="history-person">Лила А.М.</div>
+                                    <div class="history-result">Изменен состав участников экспертной группы</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Заключение
+                        </button>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+            <div class="chat-container">
+                <div class="message-container-2">
+                    <div class="message-2">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                        truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+                        it squid single-origin coffee nulla assumenda shoreditch et.
+                    </div>
+                    <div class="message-info-2">
+                        <div class="author">Пользователь</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">14:55 17 мая</div>
+                    </div>
+                </div>
+                <div id="message-3" class="message-container-1">
+                    <div class="message-1">Пожалуйста</div>
+                    <div class="message-info-1">
+                        <i class="far fa-heart like"></i>
+                        <i class="fas fa-heart like-check"></i>
+                        <div class="likes-counter">0</div>
+                        <div class="author">Константин Калашников</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:33 17 мая</div>
+                    </div>
+                </div>
+                <div class="message-container-2">
+                    <div class="message-2">Спасибо</div>
+                    <div class="message-info-2">
+                        <div class="author">Пользователь</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:32 17 мая</div>
+                    </div>
+                </div>
+                <div id="message-2" class="message-container-1">
+                    <div class="message-1">Загрузил</div>
+                    <div class="message-info-1">
+                        <i class="far fa-heart like"></i>
+                        <i class="fas fa-heart like-check"></i>
+                        <div class="likes-counter">1</div>
+                        <div class="author">Константин Калашников</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:32 17 мая</div>
+                    </div>
+                </div>
+                <div id="message-1" class="message-container-1">
+                    <div class="message-1">Добрый день! Сейчас добавим</div>
+                    <div class="message-info-1">
+                        <i class="far fa-heart like"></i>
+                        <i class="fas fa-heart like-check"></i>
+                        <div class="likes-counter">0</div>
+                        <div class="author">Татьяна Дубинина</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:31 17 мая</div>
+                    </div>
+                </div>
+                <div class="message-container-2">
+                    <div class="message-2">Добрый день! Нужна дополнительная информация о пациенте</div>
+                    <div class="message-info-2">
+                        <div class="author">Пользователь</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:30 17 мая</div>
+                    </div>
+                </div>
+            </div>
+            <div id="send-form-chat">
+                <div id="send-form-chat-message">
+                    <input type="text" class="form-control" id="message-chat">
+                    <button id="send-message-chat" class="btn btn-primary">Отправить</button>
+                </div>
+                <div id="send-form-chat-checkboxes">
+                    <label>Виза руководителя<input id="visa" type="checkbox"></label>
+                    <label>Является заключительным комментарием<input id="last-comment" type="checkbox"></label>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="dialogue" role="tabpanel" aria-labelledby="dialogue-tab">
+            <div class="chat-container">
+                <div class="message-container-2">
+                    <div class="message-2">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                        truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+                        it squid single-origin coffee nulla assumenda shoreditch et.
+                    </div>
+                    <div class="message-info-2">
+                        <div class="author">Пользователь</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">14:55 17 мая</div>
+                    </div>
+                </div>
+                <div class="message-container-1">
+                    <div class="message-1">Пожалуйста</div>
+                    <div class="message-info-1">
+                        <div class="author">Заявитель</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:33 17 мая</div>
+                    </div>
+                </div>
+                <div class="message-container-2">
+                    <div class="message-2">Спасибо</div>
+                    <div class="message-info-2">
+                        <div class="author">Пользователь</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:32 17 мая</div>
+                    </div>
+                </div>
+                <div class="message-container-1">
+                    <div class="message-1">Загрузил</div>
+                    <div class="message-info-1">
+                        <div class="author">Заявитель</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:32 17 мая</div>
+                    </div>
+                </div>
+                <div class="message-container-1">
+                    <div class="message-1">Добрый день! Сейчас добавим</div>
+                    <div class="message-info-1">
+                        <div class="author">Заявитель</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:31 17 мая</div>
+                    </div>
+                </div>
+                <div class="message-container-2">
+                    <div class="message-2">Добрый день! Нужна дополнительная информация о пациенте</div>
+                    <div class="message-info-2">
+                        <div class="author">Пользователь</div>
+                        <i class="fas fa-circle"></i>
+                        <div class="time">12:30 17 мая</div>
+                    </div>
+                </div>
+            </div>
+            <div id="send-form-dialogue"><input type="text" class="form-control" id="message-dialogue">
+                <button id="send-message-dialogue" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/consultation.js"></script>
+</body>
+</html>
