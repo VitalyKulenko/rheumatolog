@@ -29,6 +29,11 @@
     margin: 0 auto 20px auto;
     font-size: 20px;
     align-items: center;
+    justify-content: center;
+}
+
+#request-info {
+    display: flex;
 }
 
 #request-number {
@@ -116,10 +121,13 @@
 }
 
 #send-form-chat-message, #send-form-chat-checkboxes {
+    display: flex;
     flex-wrap: nowrap !important;
 }
 
 #send-form-chat-checkboxes label {
+    display: flex;
+    align-items: center;
     font-family: "Roboto", sans-serif;
     width: auto;
     margin: 5px 0 0 10px;

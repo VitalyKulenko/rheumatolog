@@ -1,24 +1,16 @@
 @media screen and (min-width: 1301px) {
-    #ref-info, #list-container {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 1200px;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    #list-container {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 1100px;
     }
 
-    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
-        display: flex;
-        font-size: 14px;
-        width: 160px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #show i {
-        margin: 0 10px 0 20px;
+    #chat input, #dialogue input {
+        width: 900px;
     }
 }
 
@@ -27,22 +19,28 @@
         background-size: auto 1320px;
     }
 
-    #list-container {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 950px;
     }
 
-    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
+    #chat input, #dialogue input {
+        width: 750px;
+    }
+
+    #request {
+        flex-wrap: wrap;
+    }
+
+    #request #teleconsultation {
+        margin-left: 0 !important;
+    }
+
+    #request #request-buttons {
+        margin-top: 10px;
+    }
+
+    #LPU-name {
         font-size: 14px;
-        width: 130px;
-    }
-
-    #list-program #program-text {
-        text-align: center;
-    }
-
-    #list-study iframe {
-        width: 700px;
-        height: 400px;
     }
 }
 
@@ -52,26 +50,12 @@
         background: url("../images/human-skeleton-adaptive-ipad.png") no-repeat top center;
     }
 
-    #list-container {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 800px;
     }
 
-    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
-        font-size: 14px;
-        width: 110px;
-    }
-
-    #show i {
-        margin: 0 10px 0 0;
-    }
-
-    #list-study iframe {
+    #chat input, #dialogue input {
         width: 600px;
-        height: 335px;
-    }
-
-    .list-group {
-        font-size: 15px;
     }
 
     #background {
@@ -99,41 +83,28 @@
         min-height: 1000px;
     }
 
-    #list-container {
+    #background {
+        background-size: auto 1320px;
+    }
+
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 700px;
     }
 
-    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
+    #chat input, #dialogue input {
+        width: 500px;
+    }
+
+    #LPU-name {
+        font-size: 13px;
+    }
+
+    #status-info {
+        font-size: 32px;
+    }
+
+    label {
         font-size: 14px;
-        width: 130px;
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .col-3 {
-        flex: none;
-        max-width: none;
-    }
-
-    .list-group {
-        flex-direction: row;
-    }
-
-    .list-group-item {
-        text-align: center;
-    }
-
-    .col-9 {
-        margin-top: 20px;
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    #background {
-        background-size: auto 1320px;
     }
 }
 
@@ -152,20 +123,6 @@
         justify-content: center;
     }
 
-    #list-container {
-        width: 600px;
-    }
-
-    .list-group-item {
-        font-size: 14px;
-        padding: 12px;
-    }
-
-    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list {
-        font-size: 14px;
-        width: 110px;
-    }
-
     #background {
         background: url("../images/human-skeleton-adaptive.png") no-repeat top center;
     }
@@ -177,6 +134,34 @@
     #user i {
         margin-left: 0 !important;
         margin-right: 10px;
+    }
+
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+        width: 600px;
+    }
+
+    #chat input, #dialogue input {
+        width: 400px;
+    }
+
+    #request-buttons .btn-primary {
+        width: 180px;
+    }
+
+    .main-header {
+        font-size: 20px;
+    }
+
+    #status-info {
+        font-size: 26px;
+    }
+
+    .history-time, .message-1, .message-2 {
+        font-size: 14px;
+    }
+
+    .message-container-1 .message-1, .message-container-2 .message-2 {
+        max-width: 400px;
     }
 }
 
@@ -206,96 +191,107 @@
         margin-bottom: 15px;
     }
 
-    #list-container {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 400px;
     }
 
-    #ref-info-container {
-        width: 400px;
+    #chat input, #dialogue input {
+        width: 375px;
     }
 
-    .list-group-item {
+    #request-buttons .btn-primary {
+        width: 220px;
+    }
+
+    #request-buttons {
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .consultation .consultation-button {
-        width: 135px;
-    }
-
-    .btn {
-        font-size: 14px;
-    }
-
-    #list-tab2 {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #show {
-        width: auto;
-        margin-bottom: 10px;
+    #request #reject, #request #help {
+        margin: 10px 0 0 0;
     }
 
-    #list-tab {
-        flex-wrap: wrap;
-    }
-
-    .list-group-item-action {
-        width: 200px !important;
-    }
-
-    #program-text h4 {
+    .main-header {
         font-size: 16px;
     }
 
-    #program-text span {
-        font-size: 14px;
-    }
-
-    #list-study iframe {
+    .nav-item {
         width: 400px;
-        height: 250px;
     }
 
-    #list-settings #settings {
-        width: 400px;
-        font-size: 14px;
+    .nav-tabs .nav-link {
+        margin: 0;
     }
 
-    #list-settings #settings input {
-        font-size: 14px;
-        width: 180px;
+    .nav-tabs {
+        margin-bottom: 20px;
     }
 
-    #list-settings #settings div div {
-        width: 140px;
+    #main-info {
+        flex-wrap: wrap;
     }
 
-    #list-settings #verify {
-        width: 180px !important;
+    #status-info {
+        height: 50px;
     }
 
-    .consultation {
-        padding: 0 15px;
+    #send-form-chat-message, #send-form-chat-checkboxes {
+        display: flex;
+        flex-wrap: wrap !important;
     }
 
-    .consultation-info-container {
-        margin-left: 15px;
+    #send-form-chat-message {
+        justify-content: flex-end;
     }
 
-    .consultation-info .consultation-number {
-        font-size: 15px;
+    #send-form-dialogue {
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
-    .consultation-info .consultation-status {
-        font-size: 13px;
+    #send-form-chat button, #send-form-dialogue button {
+        margin: 10px 0 0 0;
     }
 
-    #input-find {
-        font-size: 14px;
-        width: 220px;
+    .message-container-1 .message-1, .message-container-2 .message-2 {
+        max-width: 250px;
+    }
+
+    .history-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .history-time {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        max-width: 350px;
+    }
+
+    .history-date {
+        margin-right: 10px;
+    }
+
+    .history-action {
+        margin: 10px 0 5px 0;
+        text-align: center;
+    }
+
+    #LPU-name {
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+    }
+
+    #send-form-chat-checkboxes label {
+        display: block;
+    }
+
+    #send-form-chat-checkboxes label input {
+        vertical-align: middle;
     }
 
     #background {
@@ -328,86 +324,37 @@
         font-size: 30px;
     }
 
-    #list-container {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 300px;
     }
 
-    .list-group-item-action {
-        width: 150px !important;
+    #chat input, #dialogue input {
+        width: 275px;
     }
 
-    #list-tab2 {
-        width: 300px;
+    .message-container-1 .message-1, .message-container-2 .message-2 {
+        max-width: 200px;
     }
 
-    #show-categories {
-        flex-wrap: wrap;
+    .chat-container {
+        height: 300px;
     }
 
-    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list, .consultation .btn {
-        font-size: 13px;
-    }
-
-    .fa-clipboard-list {
-        display: none;
-    }
-
-    .consultation-info-container {
-        margin-left: 0;
-    }
-
-    .consultation .consultation-button {
-        width: 100px;
-    }
-
-    .consultation-info .consultation-number {
-        font-size: 14px;
-        width: 150px;
-    }
-
-    .consultation-button a {
-        text-align: center;
-    }
-
-    #list-find {
-        margin-top: 15px;
-    }
-
-    #list-study iframe {
-        width: 300px;
-        height: 200px;
-    }
-
-    #list-settings #settings {
-        height: 700px;
-    }
-
-    #list-settings #settings {
-        width: 300px;
+    #accordion .btn, .card-body {
         font-size: 14px;
     }
 
-    #list-settings #settings div {
-        display: flex;
+    #status-info {
+        font-size: 24px;
+    }
+
+    #request-info {
         flex-wrap: wrap;
-        text-align: center;
         justify-content: center;
     }
 
-    #list-settings #verify {
-        margin: 0;
-    }
-
-    .list-group {
-        flex-wrap: wrap;
-    }
-
-    .list-group-item {
-        width: 145px;
-    }
-
-    #list-profile form span {
-        font-size: 16px;
+    #request-date {
+        margin-left: 0;
     }
 
     #background {
@@ -421,15 +368,19 @@
         margin: 0 75px;
     }
 
-    #list-container, #list-tab2 {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 280px;
     }
 
-    .list-group-item-action {
-        width: 140px !important;
+    #chat input, #dialogue input {
+        width: 255px;
     }
 
-    #list-answered-list, #list-seen-list, #list-draft-list, #list-find-list, .consultation .btn {
-        font-size: 12px;
+    .message-container-1 .message-1, .message-container-2 .message-2 {
+        max-width: 180px;
+    }
+
+    #accordion .btn {
+        font-size: 13px;
     }
 }
