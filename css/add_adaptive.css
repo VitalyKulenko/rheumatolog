@@ -1,0 +1,268 @@
+@media screen and (min-width: 1301px) {
+    #accordion {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #accordion {
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #accordion {
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #background {
+        min-height: 1366px;
+        background: url("../images/human-skeleton-adaptive-ipad.png") no-repeat top center;
+    }
+
+    .style, .form-control {
+        width: 400px;
+    }
+
+    #table td {
+        width: 420px;
+    }
+
+    #accordion {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #header a {
+        width: 155px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #header {
+        flex-wrap: wrap;
+    }
+
+    #header #logo-container #name, #header a, #header #user {
+        font-size: 14px;
+        width: 135px;
+    }
+
+    #background {
+        min-height: 1000px;
+    }
+
+    #accordion {
+        width: 700px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        justify-content: center;
+    }
+
+    #header a {
+        width: 150px;
+    }
+
+    #logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #background {
+        background: url("../images/human-skeleton-adaptive.png") no-repeat top center;
+        background-size: 100%;
+    }
+
+    #user #user-name {
+        order: 2;
+    }
+
+    #user i {
+        margin-left: 0 !important;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .style, .form-control {
+        width: 300px;
+    }
+
+    #table td {
+        width: 320px;
+    }
+
+    #accordion {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #logo-container {
+        width: 220px;
+        justify-content: left;
+        margin: 0 10px;
+    }
+
+    #header #contacts-container {
+        flex-wrap: wrap;
+        width: 340px;
+        order: 2;
+    }
+
+    #header #logo-link {
+        margin: 0 0 10px 0;
+    }
+
+    #header #contacts-container i {
+        margin-bottom: 15px;
+    }
+
+    #header a {
+        width: 135px;
+        margin-bottom: 15px;
+    }
+
+    #accordion {
+        width: 400px;
+    }
+
+    .table-bottom {
+        border-bottom: none;
+    }
+
+    table td {
+        display: block;
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+
+    .card-header {
+        height: 70px;
+        display: flex;
+    }
+
+    .card-header button {
+        text-align: center !important;
+    }
+
+    .card-body, .card-body input, #select {
+        font-size: 14px;
+    }
+
+    .style, .form-control {
+        width: 336px;
+    }
+
+    #table td {
+        width: 356px;
+    }
+
+    #input-analysis-urine {
+        height: 140px;
+    }
+
+    #input-analysis-blood {
+        height: 120px;
+    }
+
+    #input-analysis-blood-biochemical {
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #send-case {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header #logo-container {
+        margin: 0;
+    }
+
+    #header #contacts-container {
+        order: 1;
+        width: 170px;
+        margin: 0 95px;
+        text-align: center;
+    }
+
+    #header button {
+        order: 2;
+        margin: 0 0 10px 0 !important;
+    }
+
+    #header #user {
+        order: 2;
+    }
+
+    #header #user i {
+        font-size: 30px;
+    }
+
+    .style, .form-control {
+        width: 238px;
+    }
+
+    #table td {
+        width: 258px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #accordion {
+        width: 300px;
+    }
+
+    #accordion .btn, .card-body {
+        font-size: 14px;
+    }
+
+    #background {
+        background-size: auto 2300px;
+        background: url("../images/human-skeleton-adaptive2.png") no-repeat top center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #header #contacts-container {
+        margin: 0 75px;
+    }
+
+    .style, .form-control {
+        width: 216px;
+    }
+
+    #table td {
+        width: 236px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #accordion {
+        width: 280px;
+    }
+}

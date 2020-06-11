@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подача заявки</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/add.css">
+    <link rel="stylesheet" href="../css/add_adaptive.css">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+</head>
+<body>
+<div id="header">
+    <div id="logo-container"><a id="logo-link" href="index.html"><img id="logo" src="../images/logo.png" alt="">
+        <div id="name">ФГБНУ НИИР<br>им. В. А. Насоновой</div>
+    </a></div>
+    <div id="contacts-container"><i class="fas fa-phone-alt"></i><a class="contact" href="tel:+74951092910">+7 (495) 109
+        29 10</a>
+        <i class="fas fa-envelope"></i><a class="contact" href="mailto:ref-center@irramn.ru">ref-center@irramn.ru</a>
+    </div>
+    <div id="user"><span id="user-name">Пользователь</span><i class="fas fa-user-circle"></i></div>
+</div>
+<form id="background">
+    <h1>Подача заявки в Референс-центр</h1>
+    <div class="accordion" id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Общие сведения
+                </button>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <table id="table">
+                        <tbody>
+                        <tr>
+                            <td>Медицинское учреждение</td>
+                            <td><input class="style" list="character">
+                                <datalist id="character">
+                                    <option value="Медучреждение 1"></option>
+                                    <option value="Медучреждение 2"></option>
+                                    <option value="Медучреждение 3"></option>
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Лечащий врач (ФИО полностью)</td>
+                            <td><input type="text" class="form-control" id="input-name"
+                                       placeholder="Иванов Иван Иванович"></td>
+                        </tr>
+                        <tr>
+                            <td>Цель проведения консультации</td>
+                            <td>
+                                <select class="style" id="select">
+                                    <option>Уточнение диагноза</option>
+                                    <option>Выбор тактики лечения</option>
+                                    <option>Назначение лечения</option>
+                                    <option>Консультация</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Телефон врача</td>
+                            <td><input type="text" class="form-control" id="input-phone"
+                                       placeholder="Введите телефон"></td>
+                        </tr>
+                        <tr>
+                            <td>Email врача</td>
+                            <td class="table-bottom"><input type="email" class="form-control" id="input-email"
+                                                            placeholder="Введите e-mail"></td>
+                        </tr>
+                        <tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                        <td>Сведения о наличии информированного согласия пациента на
+                            обработку и передачу третьим
+                            лицам персональных данных и согласия на проведение консультации (Да/Нет)
+                        </td>
+                        <td><input type="checkbox" class="checkbox" id="checkbox1"/>
+                            <label for="checkbox1"> </label></td>
+                        </tr>
+                        <tr>
+                            <td>Режим проведения консультации (дистанционная)</td>
+                            <td class="table-bottom"><input type="checkbox" class="checkbox" id="checkbox2"/>
+                                <label for="checkbox2"> </label></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Обязательная информация о состоянии пациента
+                </button>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Направительный диагноз</td>
+                            <td><input type="text" class="form-control" id="input-diagnosis"
+                                       placeholder="Например, периферический спондилоартрит"></td>
+                        </tr>
+                        <tr>
+                            <td>Общий анализ мочи (давностью до месяца)</td>
+                            <td>
+                                <textarea id="input-analysis-urine" class="style" name="comment">pH
+Белок
+Глюкоза
+Эритроциты
+Лейкоциты
+Клетки плоского эпителия</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Общий анализ крови (давностью до месяца)</td>
+                            <td>
+                                <textarea id="input-analysis-blood" class="style" name="comment">Гемоглобин
+Эритроциты
+Тромбоциты
+Лейкоциты
+СОЭ</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Биохимический анализ крови</td>
+                            <td>
+                                <textarea id="input-analysis-blood-biochemical" class="style" name="comment">Глюкоза
+АЛТ
+АСТ
+Креатинин
+Общий белок
+Сывороточное железо</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Уровень СРБ (давностью до месяца), мг/л.</td>
+                            <td><input type="text" class="form-control" id="input-CRP-level"
+                                       placeholder="0-15"></td>
+                        </tr>
+                        <tr>
+                            <td>Обзорная рентгенография костей таза (давностью до 12 месяцев)</td>
+                            <td><textarea id="input-pelvic-bones" class="style" name="comment"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Получаемое в данный момент лечение (с обязательным указанием всех доз применяемых
+                                препаратов, форм (инъекции, таблетки и др.) и длительности лечения, его эффективности и
+                                переносимости)
+                            </td>
+                            <td><textarea id="input-treatment-now" class="style" name="comment"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Жалобы на текущий момент, основные сведения из анамнеза заболевания (начало, дата
+                                установления диагноза, проводимая терапия, её эффективность, аллергоанамнез,
+                                сопуствующие заболевания
+                            </td>
+                            <td><textarea id="input-complaints" class="style" name="comment"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Анамнез заболевания</td>
+                            <td class="table-bottom"><textarea id="input-anamnesis" class="style"
+                                                               name="comment"></textarea></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Дополнительная информация и результаты исследований
+                </button>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Рентгенография кистей и дистальных отделов стоп (для больных с поражением мелких
+                                суставов кистей и стоп), давностью до 12 месяцев
+                            </td>
+                            <td><textarea id="input-bones-distal-feet" class="style" name="comment"
+                                          placeholder="Не обязательно"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Рентгенография поясничного и других отделов позвоночника по показаниям (давностью до 6
+                                месяцев)
+                            </td>
+                            <td><textarea id="input-spine" class="style" name="comment"
+                                          placeholder="Не обязательно"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Ссылка на МРТ отделов позвоночника и/или тазобедренных суставов - с обязательным
+                                использованием режима подавления жира (STIR или Fat Sar), давностью до 12 месяцев
+                            </td>
+                            <td><input type="text" class="form-control" id="input-MRI-spine-hip-joints"
+                                       placeholder="Не обязательно"></td>
+                        </tr>
+                        <tr>
+                            <td>Ссылка на МРТ коленных и других суставов (по показаниям)</td>
+                            <td><input type="text" class="form-control" id="input-MRI-knee-and-other"
+                                       placeholder="Не обязательно"></td>
+                        </tr>
+                        <tr>
+                            <td>Описание УЗИ суставов, ЭХОКГ, ЭГДС и другие инструментальные методы исследования (по
+                                показаниям)
+                            </td>
+                            <td><textarea id="input-instrumental-methods" class="style" name="comment"
+                                          placeholder="Не обязательно"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Для больных с воспалительной болью в спине и отсутствием на рентгенограммах достоверных
+                                (стадия II-IV) признаков сакроилиита - МРТ крестцово-подвздошных суставов в аксиальной и
+                                сагиттальной проекциях с использованием режима подавления жира (STIR или Fat Sat),
+                                ссылка
+                            </td>
+                            <td><input type="text" class="form-control" id="input-MRI-sacroiliac-joints"
+                                       placeholder="Не обязательно"></td>
+                        </tr>
+                        <tr>
+                            <td>Для больных псориазом: консультация дерматолога</td>
+                            <td><textarea id="input-dermatologist" class="style" name="comment"
+                                          placeholder="Не обязательно"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Для больных с увеитом: консультация окулиста</td>
+                            <td><textarea id="input-oculist" class="style" name="comment"
+                                          placeholder="Не обязательно"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Для больных, которым планируется проведение генно-инженерной биологической терапии:
+                                проба Манту или диаскин-тест + органы грудной клетки (давностью до 6 мес.). Для больных
+                                с положительной пробой Манту/диаскин-теста, перенесшим туберкулез (любой локализации) -
+                                консультация фтизиатра
+                            </td>
+                            <td class="table-bottom"><textarea id="input-TB-specialist" class="style" name="comment"
+                                                               placeholder="Не обязательно"></textarea></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Загрузка результатов анализов и вложений
+                </button>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    <form enctype="multipart/form-data" method="post">
+                        <input type="file" name="f">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="agree">
+            <div><input type="checkbox" class="checkbox" id="checkbox3"/><label for="checkbox3"> </label></div>
+            <div>Заполняя настоящую форму, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 г.
+                №152-ФЗ "О персональных данных", я подтверждаю своё согласие на обработку вносимых в форму моих
+                персональных
+                данных, а также персональных данных и данных лечения пациента, случай которого будет рассматриваться в
+                Референс-центре по спондилоартритам Федерального государственного бюджетного научного учреждения
+                "Научно-исследовательский институт ревматологии им. В.А. Насоновой", в том числе - персональные данные
+                пациента, а также свои персональные данные - фамилию, имя, отчество; контактный номер телефона; адрес
+                электронной почты. Предоставляю ФГБНУ НИИР им. В.А. Насоновой право осуществлять все действия (операции)
+                с
+                моими персональными данными, включая сбор, систематизацию, накопление, хранение, обновление, изменение,
+                использование, обезличивание, блокирование, уничтожение. Целью обработки персональных данных является
+                предоставление обратной связи о предоставленных услугах или оказание услуг на основании заполненной
+                формы.
+                ФГБНУ НИИР им. В.А. Насоновой имеет право на обмен (прием и передачу) моими персональными данными с
+                использованием машинных носителей или по каналам связи, с соблюдением мер, обеспечивающих их защиту от
+                несанкционированного доступа. Настоящее согласие действует бессрочно, срок хранения моих персональных
+                данных
+                не ограничен. Оставляю за собой право отозвать свое согласие посредством составления соответствующего
+                письменного документа, который может быть направлен мной в адрес ФГБНУ НИИР им. В.А. Насоновой по почте
+                заказным письмом с уведомлением о вручении, либо вручен лично под расписку представителю ФГБНУ НИИР им.
+                В.А.
+                Насоновой.
+            </div>
+        </div>
+        <div id="send-case">
+            <button id="send" type="button" class="btn btn-primary">Подать заявку</button>
+        </div>
+    </div>
+</form>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/add.js"></script>
+</body>
+</html>
