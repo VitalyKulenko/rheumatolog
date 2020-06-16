@@ -73,10 +73,6 @@
     .list-group {
         font-size: 15px;
     }
-
-    #background {
-        background-size: auto 1366px;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -130,10 +126,6 @@
         margin-top: 20px;
         flex: 100%;
         max-width: 100%;
-    }
-
-    #background {
-        background-size: auto 1320px;
     }
 }
 
@@ -296,10 +288,6 @@
     #input-find {
         font-size: 14px;
         width: 220px;
-    }
-
-    #background {
-        background-size: auto 1800px;
     }
 }
 

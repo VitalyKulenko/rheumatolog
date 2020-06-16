@@ -30,13 +30,13 @@
                     Общие сведения
                 </button>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne" class="collapse was-validated show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <table id="table">
                         <tbody>
                         <tr>
                             <td>Медицинское учреждение</td>
-                            <td><input class="style" list="character">
+                            <td><input class="style custom-select" list="character" id="hospital" required>
                                 <datalist id="character">
                                     <option value="Медучреждение 1"></option>
                                     <option value="Медучреждение 2"></option>
@@ -47,28 +47,29 @@
                         <tr>
                             <td>Лечащий врач (ФИО полностью)</td>
                             <td><input type="text" class="form-control" id="input-name"
-                                       placeholder="Иванов Иван Иванович"></td>
+                                       required placeholder="Иванов Иван Иванович"></td>
                         </tr>
                         <tr>
                             <td>Цель проведения консультации</td>
                             <td>
-                                <select class="style" id="select">
-                                    <option>Уточнение диагноза</option>
-                                    <option>Выбор тактики лечения</option>
-                                    <option>Назначение лечения</option>
-                                    <option>Консультация</option>
+                                <select class="custom-select" id="select" required>
+                                    <option value="">Выберите...</option>
+                                    <option value="1">Уточнение диагноза</option>
+                                    <option value="2">Выбор тактики лечения</option>
+                                    <option value="3">Назначение лечения</option>
+                                    <option value="4">Консультация</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
                             <td>Телефон врача</td>
-                            <td><input type="text" class="form-control" id="input-phone"
-                                       placeholder="Введите телефон"></td>
+                            <td><input type="tel" class="form-control" id="input-phone"
+                                       required placeholder="+7 (___) ___ - __ - __"></td>
                         </tr>
                         <tr>
                             <td>Email врача</td>
                             <td class="table-bottom"><input type="email" class="form-control" id="input-email"
-                                                            placeholder="Введите e-mail"></td>
+                                                            required placeholder="ivanov@gmail.com"></td>
                         </tr>
                         <tr>
                         </tbody>
@@ -99,14 +100,14 @@
                     Обязательная информация о состоянии пациента
                 </button>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div id="collapseTwo" class="collapse was-validated" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
                     <table>
                         <tbody>
                         <tr>
                             <td>Направительный диагноз</td>
                             <td><input type="text" class="form-control" id="input-diagnosis"
-                                       placeholder="Например, периферический спондилоартрит"></td>
+                                       required placeholder="Например, периферический спондилоартрит"></td>
                         </tr>
                         <tr>
                             <td>Общий анализ мочи (давностью до месяца)</td>
@@ -143,30 +144,34 @@
                         <tr>
                             <td>Уровень СРБ (давностью до месяца), мг/л.</td>
                             <td><input type="text" class="form-control" id="input-CRP-level"
-                                       placeholder="0-15"></td>
+                                       required placeholder="0-15"></td>
                         </tr>
                         <tr>
                             <td>Обзорная рентгенография костей таза (давностью до 12 месяцев)</td>
-                            <td><textarea id="input-pelvic-bones" class="style" name="comment"></textarea></td>
+                            <td><textarea id="input-pelvic-bones" class="style form-control is-invalid" name="comment"
+                                          required></textarea></td>
                         </tr>
                         <tr>
                             <td>Получаемое в данный момент лечение (с обязательным указанием всех доз применяемых
                                 препаратов, форм (инъекции, таблетки и др.) и длительности лечения, его эффективности и
                                 переносимости)
                             </td>
-                            <td><textarea id="input-treatment-now" class="style" name="comment"></textarea></td>
+                            <td><textarea id="input-treatment-now" class="style form-control is-invalid" name="comment"
+                                          required></textarea></td>
                         </tr>
                         <tr>
                             <td>Жалобы на текущий момент, основные сведения из анамнеза заболевания (начало, дата
                                 установления диагноза, проводимая терапия, её эффективность, аллергоанамнез,
                                 сопуствующие заболевания
                             </td>
-                            <td><textarea id="input-complaints" class="style" name="comment"></textarea></td>
+                            <td><textarea id="input-complaints" class="style form-control is-invalid" name="comment"
+                                          required></textarea></td>
                         </tr>
                         <tr>
                             <td>Анамнез заболевания</td>
-                            <td class="table-bottom"><textarea id="input-anamnesis" class="style"
-                                                               name="comment"></textarea></td>
+                            <td class="table-bottom"><textarea id="input-anamnesis"
+                                                               class="style form-control is-invalid"
+                                                               name="comment" required></textarea></td>
                         </tr>
                         </tbody>
                     </table>
@@ -297,6 +302,7 @@
     </div>
 </form>
 <script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/jquery.maskedinput.js"></script>
 <script src="../js/bootstrap.js"></script>
 <script src="../js/add.js"></script>
 </body>

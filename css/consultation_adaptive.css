@@ -15,10 +15,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #background {
-        background-size: auto 1320px;
-    }
-
     #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
         width: 950px;
     }
@@ -57,10 +53,6 @@
     #chat input, #dialogue input {
         width: 600px;
     }
-
-    #background {
-        background-size: auto 1366px;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -81,10 +73,6 @@
 
     #background {
         min-height: 1000px;
-    }
-
-    #background {
-        background-size: auto 1320px;
     }
 
     #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
@@ -292,10 +280,6 @@
 
     #send-form-chat-checkboxes label input {
         vertical-align: middle;
-    }
-
-    #background {
-        background-size: auto 1800px;
     }
 }
 
