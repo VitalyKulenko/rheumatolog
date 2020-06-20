@@ -243,6 +243,19 @@
         background-size: auto 2300px;
         background: url("../images/human-skeleton-adaptive2.png") no-repeat top center;
     }
+
+    #send-case {
+        flex-wrap: wrap;
+    }
+
+    #send {
+        order: 1;
+    }
+
+    #input-error {
+        order: 2;
+        margin: 10px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 360px) {

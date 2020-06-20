@@ -275,3 +275,9 @@ table, td, th {
     border-color: #ced4da;
     outline: 0;
 }
+
+#input-error {
+    display: none;
+    color: red;
+    margin: 25px 20px 0 0;
+}

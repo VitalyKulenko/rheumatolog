@@ -19,8 +19,9 @@ $(document).ready(() => {
         if (hospital.val() && doctor.val() && objective.val() && phone.val() && email.val() && diagnosis.val()
             && analysisUrine.val() && analysisBlood.val() && analysisBloodBiochemical.val() && CRPLevel.val()
             && pelvicBones.val() && treatmentNow.val() && complaints.val() && anamnesis.val()) {
+            $('#input-error').hide();
         } else {
-            $('#order-error').show();
+            $('#input-error').show();
         }
     });
 });
