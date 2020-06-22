@@ -94,26 +94,28 @@
 #chat, #dialogue {
     width: 1200px;
     margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+    border: 3px solid #1D4674;
 }
 
 .chat-container {
     display: flex;
     flex-direction: column-reverse;
     background-color: rgba(255, 255, 255, 0.5);
-    border: 3px solid #1D4674;
-    overflow-y: scroll;
-    height: 500px;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
 }
 
 #send-form-dialogue, #send-form-chat {
-    display: flex;
+    display: none;
     background-color: rgba(255, 255, 255, 0.5);
     border: 3px solid #1D4674;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     padding: 10px;
     border-radius: 20px;
+    width: 1200px;
 }
 
 #send-form-chat {
@@ -177,7 +179,7 @@
     font-family: "RobotoBold", sans-serif;
 }
 
-#chat input, #dialogue input {
+#send-form-chat input, #send-form-dialogue input {
     display: inline-block;
     font-size: 16px;
     border-radius: 20px;
@@ -186,7 +188,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-#chat button, #dialogue button {
+#send-form-chat button, #send-form-dialogue button {
     font-size: 16px;
     margin-left: 15px;
     border-radius: 20px;
