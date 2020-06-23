@@ -5,6 +5,8 @@ $(document).ready(() => {
     $('#home-tab').click(() => {
         $('#chat').css('display', 'none');
         $('#dialogue').css('display', 'none');
+        $('#send-form-chat').css('display', 'none');
+        $('#send-form-dialogue').css('display', 'none');
     });
 
     $('#chat-tab').click(() => {

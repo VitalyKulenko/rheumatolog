@@ -1,25 +1,25 @@
 @media screen and (min-width: 1301px) {
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 1200px;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 1100px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 900px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 950px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 750px;
     }
 
@@ -46,11 +46,11 @@
         background: url("../images/human-skeleton-adaptive-ipad.png") no-repeat top center;
     }
 
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 800px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 600px;
     }
 }
@@ -75,11 +75,11 @@
         min-height: 1000px;
     }
 
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 700px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 500px;
     }
 
@@ -124,11 +124,11 @@
         margin-right: 10px;
     }
 
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 600px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 400px;
     }
 
@@ -179,11 +179,11 @@
         margin-bottom: 15px;
     }
 
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 400px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 375px;
     }
 
@@ -308,11 +308,11 @@
         font-size: 30px;
     }
 
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 300px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 275px;
     }
 
@@ -320,12 +320,26 @@
         max-width: 200px;
     }
 
-    .chat-container {
+    #chat .message-info-1 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #chat .message-info-1 .fa-circle {
+        display: none;
+    }
+
+    #chat .message-info-1 .time {
+        margin-left: 0;
+    }
+
+    #chat, #dialogue {
         height: 300px;
     }
 
     #accordion .btn, .card-body {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #status-info {
@@ -352,11 +366,11 @@
         margin: 0 75px;
     }
 
-    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue {
+    #request, #main-info, #accordion, #myTab, .chat-container, #chat, #dialogue, #send-form-chat, #send-form-dialogue {
         width: 280px;
     }
 
-    #chat input, #dialogue input {
+    #send-form-chat input, #send-form-dialogue input {
         width: 255px;
     }
 
@@ -365,6 +379,6 @@
     }
 
     #accordion .btn {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
